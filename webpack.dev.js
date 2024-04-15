@@ -6,10 +6,11 @@ module.exports = {
   devtool: 'source-map',
   entry: ['./src/index.tsx'],
   resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
+    extensions: ['.ts', '.tsx', '.js', '.mjs'],
   },
   module: {
     rules: [
+      { test: /\.html/, loader: 'html-loader' },
       { test: /\.tsx?$/, loader: 'babel-loader' },
       {
         test: /\.css$/,

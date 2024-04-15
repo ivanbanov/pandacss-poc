@@ -1,5 +1,6 @@
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
-const PandaCssUnplugin = require('@pandabox/unplugin-panda-macro')
+const PandaCssUnplugin = require('@pandabox/unplugin/webpack')
+
 const devConfig = require('./webpack.dev')
 
 module.exports = {
@@ -15,6 +16,6 @@ module.exports = {
   },
   plugins: [
     ...devConfig.plugins,
-    new PandaCssUnplugin()
+    PandaCssUnplugin.default()
   ],
 }
