@@ -10,7 +10,7 @@ utilities.split(',').forEach((utility) => {
 })
 
 const context = {
-  
+  hash: true,
   conditions: {
     shift: sortConditions,
     finalize: finalizeConditions,
