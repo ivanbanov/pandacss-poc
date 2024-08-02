@@ -1,0 +1,4 @@
+import React from 'react'
+import { Box } from '../box'
+
+export const Box85136 = () => <Box foo='error'>Box85136</Box>

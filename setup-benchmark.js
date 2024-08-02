@@ -29,7 +29,7 @@ if (fs.existsSync(directoryPath)) {
 
 fs.mkdirSync(directoryPath)
 
-for (let i = 1; i <= 10000; i++) {
+for (let i = 1; i <= 100000; i++) {
   fs.writeFileSync(
     path.join(directoryPath, `box-${i}.tsx`),
     boxTemplate(i).trim()
